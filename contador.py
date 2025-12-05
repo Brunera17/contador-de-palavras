@@ -7,5 +7,10 @@ def limpar_texto(texto):
 
 def conta_palavras(frase):
     frase = limpar_texto(frase)
+    if not frase.strip():
+        return {}
     palavras = frase.split()
-    return len(palavras)
+    contagem = {}
+    for palavra in palavras:
+        contagem[palavra] = contagem.get(palavra, 0) + 1
+    return contagem
