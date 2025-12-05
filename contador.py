@@ -4,5 +4,5 @@ def conta_palavras(frase):
     return len(palavras)
 
 frase = input("Digite uma frase: ")
-
-print(conta_palavras(frase))
+print("")
+print(f"Quantidade de palavras: {conta_palavras(frase)}")
